@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # G TOWER™ Web Sitesi
 
 G TOWER™ Akıllı Dikey Depolama Sistemleri için modern ve responsive web sitesi.
@@ -58,3 +59,6 @@ Bu proje ISC lisansı altında lisanslanmıştır.
 Gökdoğan Teknoloji - info@gtower.com.tr
 
 Proje Linki: [https://github.com/your-username/gtower-website](https://github.com/your-username/gtower-website)
+=======
+# yenisite
+>>>>>>> 3c1779a010b6f2879629c31ad5d2a6c5b9f699a7
