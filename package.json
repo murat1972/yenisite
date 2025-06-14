@@ -1,0 +1,23 @@
+{
+  "name": "gtower-website",
+  "version": "1.0.0",
+  "description": "G TOWER™ Akıllı Dikey Depolama Sistemleri Web Sitesi",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "copyfiles -u 1 src/**/* dist/",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "gtower",
+    "depolama",
+    "vlm",
+    "vertical-lift-module"
+  ],
+  "author": "Gökdoğan Teknoloji",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "copyfiles": "^2.4.1"
+  }
+}
