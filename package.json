@@ -17,7 +17,13 @@
   "author": "Gökdoğan Teknoloji",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2",
-    "copyfiles": "^2.4.1"
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
+    "react-scripts": "^0.0.0"
   }
 }

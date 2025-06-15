@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.logo-container {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-content {
+  position: relative;
+  z-index: 1;
+}
+
+.main-logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0 4px 20px rgba(59,130,246,0.3);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #64748b;
+  letter-spacing: 0.8em;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.tagline {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #94a3b8;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.decorative-line {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa, #3b82f6);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+/* Hover efektleri */
+.logo-container:hover .main-logo {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .decorative-line {
+  width: 75px;
+  transition: width 0.3s ease;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .main-logo {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.5em;
+  }
+  
+  .tagline {
+    font-size: 0.5rem;
+    letter-spacing: 0.2em;
+  }
+} 

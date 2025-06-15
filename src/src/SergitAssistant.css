@@ -1,0 +1,138 @@
+.sergit-assistant {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 9999;
+}
+.sergit-fab {
+  background: #1E5BC6;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 16px rgba(30,91,198,0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: background 0.2s;
+}
+.sergit-fab:hover {
+  background: #3B82F6;
+}
+.sergit-fab-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.sergit-window {
+  width: 340px;
+  max-width: 95vw;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30,91,198,0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: sergit-pop 0.2s;
+}
+@keyframes sergit-pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.sergit-header {
+  background: #1E5BC6;
+  color: #fff;
+  padding: 1rem 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sergit-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.sergit-messages {
+  padding: 1rem 1.2rem;
+  height: 220px;
+  overflow-y: auto;
+  background: #f6f8fa;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.sergit-msg {
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  max-width: 80%;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.sergit-msg.sergit {
+  background: #e7f0fd;
+  color: #1E5BC6;
+  align-self: flex-start;
+}
+.sergit-msg.user {
+  background: #1E5BC6;
+  color: #fff;
+  align-self: flex-end;
+}
+.sergit-input-bar {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+.sergit-input-bar input {
+  flex: 1;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: none;
+  background: #fff;
+}
+.sergit-input-bar button {
+  background: #1E5BC6;
+  color: #fff;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 0 18px 0;
+  transition: background 0.2s;
+}
+.sergit-input-bar button:hover {
+  background: #3B82F6;
+}
+@media (max-width: 600px) {
+  .sergit-assistant {
+    right: 8px;
+    bottom: 8px;
+  }
+  .sergit-window {
+    width: 98vw;
+    min-width: 0;
+    right: 0;
+    left: 0;
+  }
+}
+.sergit-avatar {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(109,40,217,0.08);
+}
+.sergit-avatar-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.sergit-header .sergit-avatar {
+  margin-right: 0.5rem;
+} 
